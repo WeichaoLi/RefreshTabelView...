@@ -1,0 +1,10 @@
+/* 
+  Refresh.strings
+  EGOfresh TabelView
+
+  Created by 李伟超 on 15/3/11.
+  Copyright (c) 2015年 LWC. All rights reserved.
+*/
+
+"下拉刷新" = "下拉刷新222";
+"正在刷新" = "正在刷新";

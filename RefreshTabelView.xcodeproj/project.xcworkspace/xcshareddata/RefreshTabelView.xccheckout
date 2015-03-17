@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ECC1F6A1-A79C-43D5-94F4-27D55088C9D0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RefreshTabelView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>02271A1F8EB662A84838C7C531D144790C007CC1</key>
+		<string>https://github.com/WeichaoLi/EGOfresh-TabelView.git</string>
+		<key>671dc06b-d518-8248-8207-5643baf02e27++9191</key>
+		<string>https://192.168.60.200/svn/iHome_controller/trunk/IOS/iHome/iHome/View/EGORefresh.bundle</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RefreshTabelView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>02271A1F8EB662A84838C7C531D144790C007CC1</key>
+		<string>../..</string>
+		<key>671dc06b-d518-8248-8207-5643baf02e27++9191</key>
+		<string>../..EGOfresh%20TabelView/utility/TableViewRefresh/Refresh.bundle</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>671dc06b-d518-8248-8207-5643baf02e27++9191</key>
+		<string>https://192.168.60.200/svn/iHome_controller</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WeichaoLi/EGOfresh-TabelView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>02271A1F8EB662A84838C7C531D144790C007CC1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>02271A1F8EB662A84838C7C531D144790C007CC1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EGOfresh%20TabelView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>671dc06b-d518-8248-8207-5643baf02e27++9191</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Refresh.bundle</string>
+		</dict>
+	</array>
+</dict>
+</plist>
