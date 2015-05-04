@@ -14,15 +14,19 @@
 		<string>https://github.com/WeichaoLi/EGOfresh-TabelView.git</string>
 		<key>671dc06b-d518-8248-8207-5643baf02e27++9191</key>
 		<string>https://192.168.60.200/svn/iHome_controller/trunk/IOS/iHome/iHome/View/EGORefresh.bundle</string>
+		<key>BAA6F110CFC9C24A866CEE4BB4BFF0BAED0CDC2C</key>
+		<string>https://github.com/WeichaoLi/RefreshTabelView....git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RefreshTabelView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>02271A1F8EB662A84838C7C531D144790C007CC1</key>
-		<string>../..</string>
+		<string>../../../EGOfresh%20TabelView</string>
 		<key>671dc06b-d518-8248-8207-5643baf02e27++9191</key>
-		<string>../..EGOfresh%20TabelView/utility/TableViewRefresh/Refresh.bundle</string>
+		<string>../../../EGOfresh%20TabelViewEGOfresh%20TabelView/utility/TableViewRefresh/Refresh.bundle</string>
+		<key>BAA6F110CFC9C24A866CEE4BB4BFF0BAED0CDC2C</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -30,11 +34,11 @@
 		<string>https://192.168.60.200/svn/iHome_controller</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/WeichaoLi/EGOfresh-TabelView.git</string>
+	<string>https://github.com/WeichaoLi/RefreshTabelView....git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>02271A1F8EB662A84838C7C531D144790C007CC1</string>
+	<string>BAA6F110CFC9C24A866CEE4BB4BFF0BAED0CDC2C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -52,6 +56,14 @@
 			<string>671dc06b-d518-8248-8207-5643baf02e27++9191</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Refresh.bundle</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BAA6F110CFC9C24A866CEE4BB4BFF0BAED0CDC2C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RefreshTabelView</string>
 		</dict>
 	</array>
 </dict>

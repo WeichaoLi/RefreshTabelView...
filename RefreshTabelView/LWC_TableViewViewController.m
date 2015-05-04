@@ -19,12 +19,32 @@
     DetailViewController *detailVC;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)init {
+    if (self = [super init]) {
+#ifdef __IPHONE_7_0
+//        self.navigationController.navigationBar.translucent = NO;
+//        self.extendedLayoutIncludesOpaqueBars = YES;
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+#endif
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        self.wantsFullScreenLayout = YES;
+#endif
+    }
+    return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initializationb
-        
+#ifdef __IPHONE_7_0
+        if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
+            self.navigationController.navigationBar.translucent = NO;
+            self.edgesForExtendedLayout = UIRectEdgeNone;
+            self.automaticallyAdjustsScrollViewInsets = NO;
+        }
+#endif
     }
     return self;
 }
@@ -36,7 +56,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+#ifdef __IPHONE_7_0
+//        self.navigationController.navigationBar.translucent = NO;
+//        self.extendedLayoutIncludesOpaqueBars = YES;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+#endif
+//#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+//    self.wantsFullScreenLayout = YES;
+//#endif
+    
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     rowCount = 13;
@@ -65,11 +95,12 @@
     UIView *footerview = [[UIView alloc] initWithFrame:CGRectZero];
     _myTableView.tableFooterView = footerview;
     
+    __weak LWC_TableViewViewController *VC = self;
     [_myTableView addRefreshHandler:^(){
-        [self scrollViewDidRefreshing];
+        [VC scrollViewDidRefreshing];
     }];
     [_myTableView addLoadMoreHander:^(){
-        [self loadMore];
+        [VC loadMore];
     }];
 }
 
