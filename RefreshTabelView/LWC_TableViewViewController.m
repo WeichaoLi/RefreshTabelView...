@@ -83,14 +83,15 @@
     
     _myTableView.backgroundColor = [UIColor whiteColor];
 
-    _HeaderScrollView = [[PageScrollView alloc] initWithFrame:CGRectMake(0, 20, _myTableView.frame.size.width, 190)];
-    _HeaderScrollView.backgroundColor = [UIColor redColor];
-    _HeaderScrollView.ImageArray = [NSMutableArray arrayWithObjects:@"0.png", @"1.png", @"2.png", @"3.png", @"4.png", nil];
-    _HeaderScrollView.autoScrolled = NO;
-    _HeaderScrollView.pageViewDelegate = self;
-    _HeaderScrollView.Durations = 2.f;
-
-    _myTableView.tableHeaderView = _HeaderScrollView;
+//    _HeaderScrollView = [[PageScrollView alloc] initWithFrame:CGRectMake(0, 20, _myTableView.frame.size.width, 190)];
+//    _HeaderScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    _HeaderScrollView.backgroundColor = [UIColor redColor];
+//    _HeaderScrollView.ImageArray = [NSMutableArray arrayWithObjects:@"0.png", @"1.png", @"2.png", @"3.png", @"4.png", nil];
+//    _HeaderScrollView.autoScrolled = NO;
+//    _HeaderScrollView.pageViewDelegate = self;
+//    _HeaderScrollView.Durations = 2.f;
+//
+//    _myTableView.tableHeaderView = _HeaderScrollView;
     
     UIView *footerview = [[UIView alloc] initWithFrame:CGRectZero];
     _myTableView.tableFooterView = footerview;
@@ -109,8 +110,16 @@
     self.navigationController.navigationBarHidden = NO;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
+
 - (void)dealloc {
-    [self removeObserver:_myTableView forKeyPath:@"contentSize"];
+
 }
 
 - (void)didReceiveMemoryWarning
